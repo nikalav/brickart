@@ -1,0 +1,17 @@
+section{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 1.3em;
+	grid-row-gap: 1em;
+	margin-right: 10px;
+}
+
+article{
+	margin-left: 1em;
+	position: relative;
+	padding: 1em;
+	border: solid;
+	border-color: #000;
+	background-color: cornsilk 0.6;
+	
+}
