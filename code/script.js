@@ -1,5 +1,5 @@
 //select DOM elements
-const template = document.querySelector("#set");
+const template = document.querySelector("#set").content;
 const main = document.querySelector("main");
 
 //make shortcuts to API endpoints
@@ -14,13 +14,13 @@ function loadJSON(link){
 
 function displayLegoData(brickArt){
 	const section = document.querySelector('#' + brickArt.gsx$category.$t);
-	let clone = template.cloneNode('true');
-	clone.querySelector("h2").textContent = data.gsx$title.$t;
+	let clone = template.cloneNode(true);
+	clone.querySelector("h2").textContent = brickArt.gsx$title.$t;
 	
-	const img = data.gsx$imagename.$t;
+	const img = brickArt.gsx$imagename.$t;
 	clone.querySelector("img").setAttribute("src", "photos/"+img+".jpg");
 	
-	section.appendChild(clone);
+	main.appendChild(clone);
 	
 }
 loadJSON(link);
