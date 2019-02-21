@@ -1,3 +1,8 @@
+nav {
+	width: 100%;
+	overflow: auto;
+
+}
 section{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -13,5 +18,11 @@ article{
 	border: solid;
 	border-color: #000;
 	background-color: cornsilk 0.6;
-	
+
+}
+img{
+	width: 100%;
+}
+.hide {
+	display: none;
 }
